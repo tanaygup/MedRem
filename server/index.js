@@ -5,7 +5,7 @@ const fs = require("fs");
 const pdfParse = require("pdf-parse");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const apiKey = NEXT_PUBLIC_GEMINI_KEY;
+const apiKey = process.env.NEXT_PUBLIC_GEMINI_KEY;
 const app = express();
 const port = 8000;
 
@@ -67,6 +67,22 @@ app.post("/ask", async (req, res) => {
   } catch (err) {
     console.error(err);
     res.status(500).json({ error: "Failed to generate answer." });
+  }
+});
+
+app.post("/general-health", async (req, res) => {
+  const { question } = req.body;
+  try {
+    const prompt = `You are a knowledgeable health assistant. Answer the following general health question concisely:\n\n${question}`;
+
+    const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
+    const result = await model.generateContent(prompt);
+    const answer = await (await result.response).text();
+
+    res.json({ answer });
+  } catch (err) {
+    console.error("General health error:", err);
+    res.status(500).json({ answer: "Failed to generate answer." });
   }
 });
 

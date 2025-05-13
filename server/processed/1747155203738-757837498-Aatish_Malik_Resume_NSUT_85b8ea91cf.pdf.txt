@@ -1,0 +1,49 @@
+
+
+Aatish Malik
++91-9996908470|aatish.malik.ug21@nsut.ac.in|LinkedIn|GitHub|Leetcode
+EDUCATION
+Netaji Subhas University of Technology, Delhi2021-2025
+Bachelor of Technology in Computer Science, Data Science8.22 CGPA
+Swami Nitanand Public School2019-2020
+Class XII (CBSE)80 %
+The Sanskriti School2018-2019
+Class X (CBSE)96 %
+WORK EXPERIENCE
+Software Engineer Intern|Watsoo ExpressMay 2024 – Present
+Gurgaon, India
+•Developed driver software in C for a 6-axis MEMS sensor on proprietary STM-based device, establishing communication via SPI.
+•Enhanced data precision in edge cases by60%through the implementation of Kalman Filter algorithm for sensor fusion.
+•Engineered a TCP data transmission pipeline using an onboard Quectel Modem, designing server-side parsers in Java to interpret
+data according toAIS 140compliance.
+Developer Intern|NewsViewsSep 2023 – Oct 2023
+Remote, India
+•Designed efficient database schemas and integrated Login screen and user authentication.
+•Programmed the main user interaction components of homescreen with challenging UI and physics based animations using base
+Flutter animation and rendering classes.
+PROJECTS
+NSUTxMar 2023 – Present
+Playstore|AppstoreFlutter, Firebase, Dart
+•Led a20members team to develop cross platform app creating a University Management System interface of NSUT.
+•Ensured successful launch of the application with contributions in key features such as automatic login from cookies, site parsers
+and reducing loading time by 30% and continued bug fixes and maintainance.
+•Secured over10K+downloads on playstore with over4kactive user base.
+Beyond Voice CommandsNov 2023 – Apr 2024
+PaperPython, ADB, OpenAI, Hugging Face
+•A comprehensive audio-visual model for mobile device operation and quantitative evaluation benchmark.
+•Developed a mobile agent with capabilities surpassing conventional voice command assistants, by mimicking human like thought
+process it completed complex tasks with 70% completion rate over exisiting methods.
+•Used state of art technologies in LLM and successfully submitted a research paper under the guidance ofProf. Gaurav Singhal.
+TECHNICAL SKILLS
+Programming Languages: C/C++, Dart, HTML, CSS, JS, SQL, Bash, Python
+Technologies: Firestore, Firebase, APIs(OpenAI, Gmap, Razorpay), Flutter, ROS(Robot Operating Software), Linux, OpenCV, Pytorch
+CS Fundamentals: Knowledgeable in Database Management Systems(DBMS), Object-Oriented Programming(OOPS), Software
+Development, Computer Architecture, Operating Systems, Data Structures, and Algorithms
+POSITION OF RESPONSIBILITY
+Mentor, International Developers Community (Devcomm), NSUT
+Event Management Head, Avinya 2024 (Biggest TechFest of NSUT)
+Department Head(App Development) , International Developers Community (Devcomm), NSUT
+Teaching Assistant, Prof. Vicky Suri (Jan’22-May’22)
+Software department, ARES Robotics NSUT
+ACADEMIC ACHIEVEMENTS & INTERESTS
+Rank 2245 in JEE, Rank 1 in Branch CSDS in 3rd and 6th semester, 500+ DSA problems, Open source, Philosophy
