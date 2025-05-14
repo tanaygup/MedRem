@@ -2,10 +2,12 @@
 import Link from "next/link";
 import { Pill, Bell, MessageSquare, ArrowRight } from "lucide-react";
 import { redirectToSignUp } from "@clerk/nextjs";
+import HomeNavbar from "@/components/landingPage/navbar";
 
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-blue-100">
+      <HomeNavbar/>
       <div className="container mx-auto px-4 py-16 max-w-6xl">
         {/* Header Section */}
         <div className="text-center mb-16">

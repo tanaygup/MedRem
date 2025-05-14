@@ -1,6 +1,7 @@
+import { SignInButton } from "@clerk/nextjs";
 import Link from "next/link";
 
-export default function Navbar() {
+export default function HomeNavbar() {
   return (
     <nav className="bg-white shadow-sm">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -28,15 +29,13 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-3">
-          <Link href="/login" className="text-gray-600 hover:text-blue-600">
-            Login
-          </Link>
-          <Link
+          
+          {/* <Link
             href="/get-started"
             className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md"
           >
             Get Started
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>

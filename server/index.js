@@ -8,7 +8,7 @@ const { GoogleGenerativeAI } = require("@google/generative-ai");
 
 dotenv.config({path:'.env.local'});
 
-const apiKey =process.env.NEXT_PUBLIC_GEMINI_KEY;
+const apiKey ="AIzaSyDKtX0Qk5Py-7_WYuVTTZLJJXfpny3XrSg";
 const app = express();
 const port = 8000;
 

@@ -9,7 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@clerk/nextjs": "^6.19.2",
+    "@clerk/nextjs": "^6.19.3",
     "@google/generative-ai": "^0.24.1",
     "@radix-ui/react-dropdown-menu": "^2.1.14",
     "@radix-ui/react-progress": "^1.1.6",
@@ -27,6 +27,7 @@
     "lucide-react": "^0.510.0",
     "multer": "^1.4.5-lts.2",
     "next": "15.3.2",
+    "nodemon": "^3.1.10",
     "pdf-parse": "^1.1.1",
     "postgres": "^3.4.5",
     "react": "^19.0.0",

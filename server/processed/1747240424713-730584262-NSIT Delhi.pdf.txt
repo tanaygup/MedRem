@@ -1,0 +1,48 @@
+
+
+NETAJI SUBHAS UNIVERSITY OF TECHNOLOGY
+END SEM EXAMINATION -
+ADMIT CARD
+Name: CHIRAG SINGHALRoll No: 2022UCD2115
+Degree: B.Tech.Section: 1
+Branch / Specialization: COMPUTER SCIENCE AND ENGINEERING / COMPUTER SCIENCE AND ENGINEERING (DATA SCIENCE)
+Mobile: 9818907290
+12 Digit Roll Number : 202210222115
+ 
+S NoSemPaper CodePaper Name
+16CDCSC18Distributed Databases
+26CDCSC19Data Science Tools Workshop
+36CDCSC20Query Processing and Optimization
+46CDCSE24Health Informatics
+56DNCS012Introduction to Internet of Things
+66DNIT016Data Analytics with Python
+76EONM009E-Business
+ 
+  
+Dealing AssistantS.O. (Academic)
+IMPORTANT INSTRUCTIONS
+ 1.  Always keep the Examination Admit Card with you and show it to the examination staff on duty as and when required / demanded.
+ 2. No Candidate will be allowed to leave the Examination Hall before half the time is over.
+ 3.  The students must get seated in the Examination Hall 20 minutes before the commencement of examination. They will not be allowed to enter the examination hall once the exam starts.
+ 4. No Candidate shall be allowed to carry inside the Examination Hall, any textual material printed or written, bits of paper or any other material of like nature.
+ 5. Mobile phones, pagers and articles of like nature shall not be allowed in the examination hall (scientific / simple calculators without storage feature are however permissible
+in the examination hall, if prescribed).
+ 6. No blank pages be left in between answer to various questions.
+ 7. Candidate shall only use Blue or Black ink pen or ball pen in the Answer Booklet. Use of any other ink/ball pen (Except Blue or Black) by the candidate in the Answer Booklet shall be
+considered as use of unfair means.
+ 8. Do not write anything inside the Answer Booklet before distribution of question paper.
+ 9. Do not write your Examination Roll Number/any Mark at any other place other than the space provided on the title cover of the Answer Booklet.
+10. Do not write any matter except your Examination Roll No. on your question paper.
+11. Cross out all blank pages in the Answer Booklet before submission to the invigilator.
+12. Carrying of prescribed material / items inside the Examination Hall will be treated as unfair means case.
+13. Candidates are admitted to the examination under the conditions laid down in the Ordinance and Regulations of the Institute/University. In this connection, a copy of the Code of the
+Conduct for Examinees, Directions to Candidates for Examination and copy of Ordinance dealing with General Rules for Examination, Disorderly Conduct and Use of Unfair-means,
+respectively, are given already. Candidates are advised to read the contents carefully, immediately on receipt. The rules need not to be carried by the candidates to the examination center.
+I will abide to the rules contained in the 'Code of Conduct for Examinees, Directions to the Candidate for Examinations and General Rules for
+Examinations'.
+ 
+Signature of the Candidate
+ 
+Generated on 2025-04-20 09:41:16
+20/04/2025, 09:43NSIT Delhi
+https://www.imsnsit.org/imsnsit/student.htm1/1
