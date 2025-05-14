@@ -3,9 +3,12 @@ const express = require("express");
 const multer = require("multer");
 const fs = require("fs");
 const pdfParse = require("pdf-parse");
+const dotenv = require("dotenv");
 const { GoogleGenerativeAI } = require("@google/generative-ai");
 
-const apiKey = process.env.NEXT_PUBLIC_GEMINI_KEY;
+dotenv.config({path:'.env.local'});
+
+const apiKey =process.env.NEXT_PUBLIC_GEMINI_KEY;
 const app = express();
 const port = 8000;
 
