@@ -1,7 +1,8 @@
-import { SignInButton } from "@clerk/nextjs";
+import { SignInButton, SignUpButton, useUser, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 
 export default function HomeNavbar() {
+    const { isSignedIn, user } = useUser();
   return (
     <nav className="bg-white shadow-sm">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
@@ -29,13 +30,29 @@ export default function HomeNavbar() {
         </div>
 
         <div className="flex items-center gap-3">
+          {isSignedIn ? (
+          <div className="flex items-center space-x-4">
+            <span className="text-sm text-black">
+              Hello, {user?.firstName || "User"}!
+            </span>
+            <UserButton />
+          </div>
+        ) : (
+          <>
+            <SignInButton>
+              <button className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 hover:cursor-pointer">
+                Sign-in
+              </button>
+            </SignInButton>
+{/* 
+            <SignUpButton>
+              <button className="bg-white text-gray-800 py-2 px-4 rounded hover:bg-gray-200">
+                Sign-up
+              </button>
+            </SignUpButton> */}
+          </>
+        )}
           
-          {/* <Link
-            href="/get-started"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md"
-          >
-            Get Started
-          </Link> */}
         </div>
       </div>
     </nav>

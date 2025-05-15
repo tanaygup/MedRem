@@ -51,12 +51,14 @@ export default function MedicationOverview() {
   return (
     <Card>
       <CardHeader className="pb-2">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col gap-4 justify-between">
+          <div className="flex flex-row gap-2">
           <div>
             <CardTitle className="text-xl">Today's Medications</CardTitle>
             <CardDescription>
               Track your daily medication schedule
             </CardDescription>
+          </div>
           </div>
           <div className="flex gap-2">
             <Badge

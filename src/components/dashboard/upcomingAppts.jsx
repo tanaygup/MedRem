@@ -70,11 +70,11 @@ export default function UpcomingAppointments() {
                 <span>{appointment.location}</span>
               </div>
 
-              <div className="flex gap-2">
-                <Button variant="outline" size="sm" className="w-full">
+              <div className="flex gap-2 items-center justify-center">
+                <Button variant="outline" size="sm" className="w-auto">
                   Reschedule
                 </Button>
-                <Button size="sm" className="w-full">
+                <Button size="sm" className="w-auto">
                   Details
                 </Button>
               </div>

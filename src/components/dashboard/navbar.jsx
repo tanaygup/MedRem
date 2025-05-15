@@ -13,6 +13,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { AddMedicineDialog } from "./add-medicine-dialog";
+import { UserButton } from "@clerk/nextjs";
 
 export default function DashboardNavbar({ onMenuClick }) {
   const [addMedicineOpen, setAddMedicineOpen] = useState(false);
@@ -42,7 +43,7 @@ export default function DashboardNavbar({ onMenuClick }) {
         <div className="flex items-center gap-2">
           <Button
             onClick={() => setAddMedicineOpen(true)}
-            className="hidden md:flex gap-1 bg-blue-600 hover:bg-blue-700"
+            className=" md:flex gap-1 bg-blue-600 hover:bg-blue-700"
           >
             <Plus className="h-4 w-4" />
             Add Medicine
@@ -60,7 +61,7 @@ export default function DashboardNavbar({ onMenuClick }) {
             <DropdownMenuTrigger asChild>
               <Button variant="ghost" size="icon" className="rounded-full">
                 <div className="h-8 w-8 rounded-full bg-blue-100 flex items-center justify-center text-blue-600 font-medium">
-                  JD
+                  <UserButton/>
                 </div>
               </Button>
             </DropdownMenuTrigger>

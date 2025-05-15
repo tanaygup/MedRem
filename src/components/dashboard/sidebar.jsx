@@ -3,35 +3,13 @@
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import {
-  LayoutDashboard,
-  Pill,
-  CalendarClock,
-  Bell,
-  MessageSquare,
-  BarChart3,
-  Settings,
-  HelpCircle,
   ChevronLeft,
   LogOut,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { navItems } from "@/utils/constants.js";
 export default function DashboardSidebar({ open, setOpen }) {
   const pathname = usePathname();
-
-  const navItems = [
-    { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard },
-    { name: "Medications", href: "/dashboard/medications", icon: Pill },
-    {
-      name: "Appointments",
-      href: "/dashboard/appointments",
-      icon: CalendarClock,
-    },
-    { name: "Reminders", href: "/dashboard/reminders", icon: Bell },
-    { name: "AI Health Chat", href: "/dashboard/chat", icon: MessageSquare },
-    { name: "Reports", href: "/dashboard/reports", icon: BarChart3 },
-    { name: "Settings", href: "/dashboard/settings", icon: Settings },
-    { name: "Help", href: "/dashboard/help", icon: HelpCircle },
-  ];
 
   return (
     <>
@@ -55,7 +33,7 @@ export default function DashboardSidebar({ open, setOpen }) {
       >
         {/* Logo */}
         <div className="flex items-center justify-between h-16 px-4 border-b">
-          <Link href="/dashboard" className="flex items-center gap-2">
+          <Link href="/" className="flex items-center gap-2">
             <div className="relative w-8 h-4">
               <div className="absolute w-8 h-4 bg-red-500 rounded-full"></div>
               <div className="absolute w-4 h-4 right-0 bg-yellow-400 rounded-full"></div>
