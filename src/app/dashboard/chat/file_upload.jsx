@@ -38,7 +38,7 @@ export function FileUpload({ setFileName }) {
             const formData = new FormData();
             formData.append("pdf", file);
 
-            const res = await fetch("http://localhost:8000/upload/pdf", {
+            const res = await fetch("../api/upload-prescription", {
               method: "POST",
               body: formData,
             });

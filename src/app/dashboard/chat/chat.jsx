@@ -33,12 +33,7 @@ export function ChatInterface({ fileName }) {
     setIsLoading(true);
 
     try {
-      // If no file is uploaded, we can still ask general health questions
-      const endpoint = fileName
-        ? "http://localhost:8000/ask"
-        : "http://localhost:8000/general-health";
-
-      const res = await fetch(endpoint, {
+      const res = await fetch("../api/ask", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ question, fileName }),
