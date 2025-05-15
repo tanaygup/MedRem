@@ -8,6 +8,8 @@ import { Button } from "@/components/ui/button";
 import { Textarea } from "@/components/ui/textarea";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
+import Markdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 export function ChatInterface({ fileName }) {
   const [question, setQuestion] = useState("");
@@ -116,7 +118,7 @@ export function ChatInterface({ fileName }) {
                     : "bg-gray-100 text-gray-800"
                 )}
               >
-                {message.content}
+                <Markdown>{message.content}</Markdown>
               </div>
 
               {message.role === "user" && (

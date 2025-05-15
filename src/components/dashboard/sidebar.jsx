@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { navItems } from "@/utils/constants.js";
+import { SignOutButton } from "@clerk/nextjs";
 export default function DashboardSidebar({ open, setOpen }) {
   const pathname = usePathname();
 
@@ -82,15 +83,15 @@ export default function DashboardSidebar({ open, setOpen }) {
 
         {/* Logout */}
         <div className="absolute bottom-0 w-full p-2 border-t">
-          <button
+          <div
             className={cn(
               "flex items-center w-full px-3 py-2 text-gray-700 rounded-md hover:bg-gray-100 transition-colors",
               !open && "justify-center"
             )}
           >
             <LogOut className="h-5 w-5 text-gray-500" />
-            {open && <span className="ml-3">Logout</span>}
-          </button>
+            {open && <span className="ml-3"><SignOutButton>Log Out</SignOutButton></span>}
+          </div>
         </div>
       </div>
     </>

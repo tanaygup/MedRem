@@ -17,8 +17,8 @@ export async function POST(req) {
       // --- PDF‑based question ---
       const txtPath = path.join(
         process.cwd(),
-        "/public/uploads",
-        `${fileName}`
+        "/public/processed",
+        `${fileName}.txt`
       );
       const fileText = fs.readFileSync(txtPath, "utf8");
       prompt = [
