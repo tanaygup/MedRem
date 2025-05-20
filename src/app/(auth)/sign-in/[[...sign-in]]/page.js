@@ -8,7 +8,7 @@ export default function SignInPage() {
   return (
     <>
       <div className="bg-blue-500 bg-cover flex h-screen login-page flex-wrap justify-center pt-6">
-        <SignIn />
+        <SignIn/>
       </div>
     </>
   );

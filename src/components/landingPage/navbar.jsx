@@ -41,15 +41,15 @@ export default function HomeNavbar() {
           <>
             <SignInButton>
               <button className="bg-blue-600 text-white py-2 px-4 rounded hover:bg-blue-700 hover:cursor-pointer">
-                Sign-in
+                Log In
               </button>
             </SignInButton>
-{/* 
+
             <SignUpButton>
-              <button className="bg-white text-gray-800 py-2 px-4 rounded hover:bg-gray-200">
-                Sign-up
+              <button className="bg-white text-gray-800 py-2 px-4 rounded hover:bg-gray-200 border border-blue-600 hover:cursor-pointer">
+                Sign up
               </button>
-            </SignUpButton> */}
+            </SignUpButton> 
           </>
         )}
           
