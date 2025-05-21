@@ -1,3 +1,4 @@
+"use client";
 import {
   Card,
   CardContent,
@@ -7,14 +8,15 @@ import {
 } from "@/components/ui/card";
 import { CalendarClock, MapPin, User } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useRouter } from "next/navigation";
 
 export default function UpcomingAppointments() {
-  // Mock data
-  const appointments = [
+  const router= useRouter();
+  const apps = [
     {
       id: 1,
       doctor: "Dr. Sarah Johnson",
-      specialty: "Cardiologist",
+      status: "Completed",
       date: "May 15, 2025",
       time: "10:30 AM",
       location: "Heart Care Center",
@@ -22,7 +24,7 @@ export default function UpcomingAppointments() {
     {
       id: 2,
       doctor: "Dr. Michael Chen",
-      specialty: "Endocrinologist",
+      status: "Pending",
       date: "May 22, 2025",
       time: "2:15 PM",
       location: "Diabetes Care Clinic",
@@ -37,7 +39,7 @@ export default function UpcomingAppointments() {
       </CardHeader>
       <CardContent>
         <div className="space-y-4">
-          {appointments.map((appointment) => (
+          {apps.map((appointment) => (
             <div
               key={appointment.id}
               className="p-3 rounded-lg border bg-card hover:bg-accent/10 transition-colors"
@@ -82,7 +84,9 @@ export default function UpcomingAppointments() {
           ))}
         </div>
 
-        <Button variant="outline" className="w-full mt-4">
+        <Button variant="outline" className="w-full mt-4 hover:cursor-pointer"
+        onClick={() => router.push("/dashboard/appointments/schedule-appointment")}
+        >
           <CalendarClock className="mr-2 h-4 w-4" />
           Schedule New Appointment
         </Button>

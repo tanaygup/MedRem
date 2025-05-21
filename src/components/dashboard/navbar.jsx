@@ -26,24 +26,35 @@ export default function DashboardNavbar({ onMenuClick }) {
    const[loading,setLoading]=useState(true);
 
  useEffect(() => {
-    const fetchDetailsStatus = async () => {
-      try {
-        const res = await fetch(`/api/get-user?clerkId=${user?.id}`);
-        const data = await res.json();
-        if (res.ok) {
-          setIsDetailsUpdated(data.isDetailsUpdated);
-        } else {
-          console.error("Error fetching user:", data.error);
-        }
-      } catch (err) {
-        console.error("Fetch failed", err);
-      } finally {
-        setLoading(false);
-      }
-    };
+  const fetchDetailsStatus = async () => {
+    const cached = localStorage.getItem("isDetailsUpdated");
 
-    if (user?.id) fetchDetailsStatus();
-  }, [user]);
+    if (cached !== null) {
+      setIsDetailsUpdated(JSON.parse(cached));
+      setLoading(false);
+      return;
+    }
+
+    try {
+      const res = await fetch(`/api/get-user?clerkId=${user?.id}`);
+      const data = await res.json();
+
+      if (res.ok) {
+        setIsDetailsUpdated(data.isDetailsUpdated);
+        localStorage.setItem("isDetailsUpdated", JSON.stringify(data.isDetailsUpdated));
+      } else {
+        console.error("Error fetching user:", data.error);
+      }
+    } catch (err) {
+      console.error("Fetch failed", err);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (user?.id) fetchDetailsStatus();
+}, [user]);
+
 
   if (!isLoaded||loading || isDetailsUpdated === null) {
     return (

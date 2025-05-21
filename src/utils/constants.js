@@ -25,3 +25,27 @@
     { name: "Settings", href: "/dashboard/settings", icon: Settings },
     { name: "Help", href: "/dashboard/help", icon: HelpCircle },
   ];
+
+  // utils/dateTime.ts
+
+/**
+ * Format an ISO date string (or timestamp) into "DD/MM/YYYY"
+ */
+export function formatDate(input){
+  const date = typeof input === "string" ? new Date(input) : input;
+  return date.toLocaleDateString("en-GB");
+}
+
+export function formatTime(
+  time24,
+  locale= "en-US"
+){
+  const [hourStr, minuteStr] = time24.split(":");
+  const date = new Date();
+  date.setHours(parseInt(hourStr, 10), parseInt(minuteStr, 10), 0, 0);
+  return date.toLocaleTimeString(locale, {
+    hour: "numeric",
+    minute: "2-digit",
+    hour12: true,
+  });
+}

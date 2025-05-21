@@ -28,7 +28,6 @@ export const doctors = pgTable('doctors', {
 
 export const appointments = pgTable('appointments', {
   appointmentId: integer('appointment_id').primaryKey(),
-  userId: serial('user_id').notNull().references(() => users.userId),
   clerkId:text('clerk_id').notNull().references(() => users.clerkId),
   doctorId: integer('doctor_id').references(() => doctors.doctorId),
   appointmentDate: date('appointment_date').notNull(),
