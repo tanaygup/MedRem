@@ -4,6 +4,7 @@ import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
 import { useState,useEffect } from 'react';
 import { useUser } from '@clerk/nextjs';
+import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { CalendarClock, MapPin, User,Info } from "lucide-react";
 import AppointmentListSkeleton from './loading';
@@ -109,9 +110,31 @@ export default function AppointmentPage() {
                 </div>
 
               <div className="flex gap-2 items-center justify-center">
-                <Button variant="outline" size="sm" className="w-auto hover:cursor-pointer">
+                <Link 
+                key={appointment.id}
+                href={{
+                  pathname:`/dashboard/appointments/reschedule/${appointment.id}`,
+                  query: {
+                    doctorId: appointment.doctorId,
+                    appointmentDate: appointment.date,
+                    appointmentTime: appointment.time,
+                    location: appointment.location,
+                    details: appointment.details,
+                    status: appointment.status,
+                    doctorName: appointment.doctorName,
+                  },
+                  
+                }
+                  
+                }
+                prefetch={true}
+                
+                >
+                <Button variant="outline" size="sm" className="w-auto hover:cursor-pointer"
+                >
                   Reschedule
                 </Button>
+                </Link>
                 <Button size="sm" className="w-auto hover:cursor-pointer"
                   onClick={() => handleDelete(appointment.id)}
                 >

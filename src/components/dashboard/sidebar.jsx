@@ -62,6 +62,7 @@ export default function DashboardSidebar({ open, setOpen }) {
             <Link
               key={item.name}
               href={item.href}
+              prefetch={true}
               className={cn(
                 "flex items-center px-3 py-2 rounded-md transition-colors",
                 pathname === item.href
